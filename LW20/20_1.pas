@@ -1,9 +1,9 @@
 PROGRAM PseudoArt(INPUT, OUTPUT);
 CONST
   SupportedLetter = ['A', 'B', 'C'];
-  LetterA = [3, 7, 9, 12 .. 14, 17, 19, 22, 24];
-  LetterB = [1 .. 3, 6, 9, 11..13, 16, 19, 21..23];
-  LetterC = [2..4, 6, 10, 11, 16, 20, 22..24];
+  LetterA = [2, 6, 8, 11 .. 13, 16, 18, 21, 23];
+  LetterB = [1 .. 3, 6, 9, 11 .. 13, 16, 19, 21 .. 23];
+  LetterC = [2 .. 4, 6, 10, 11, 16, 20, 22 .. 24];
   X1 = 1;
   X2 = 25;
   MatrixLength = 5;
