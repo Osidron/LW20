@@ -1,7 +1,7 @@
 PROGRAM PseudoArt(INPUT, OUTPUT);
 CONST
   SupportedLetter = ['A', 'B', 'C'];
-  LetterA = [3, 7, 9, 11..15, 16, 20, 21, 25];
+  LetterA = [3, 7, 9, 12 .. 14, 17, 19, 22, 24];
   LetterB = [1 .. 3, 6, 9, 11..13, 16, 19, 21..23];
   LetterC = [2..4, 6, 10, 11, 16, 20, 22..24];
   X1 = 1;
@@ -38,7 +38,7 @@ BEGIN
     'B': WriteLetter(FOut, LetterB);
     'C': WriteLetter(FOut, LetterC);
   ELSE
-    WRITELN('Символ ', ChIn, ' не находится в списке обрабатываемых');
+    WRITELN('тАШ┬и┬м┬в┬о┬л ', ChIn, ' ┬н┬е ┬н┬а├е┬о┬д┬и├в├б├п ┬в ├б┬п┬и├б┬к┬е ┬о┬б├а┬а┬б┬а├в├л┬в┬а┬е┬м├л├е');
     WRITELN
   END
 END;
@@ -57,7 +57,7 @@ VAR
   Ch: CHAR;
 
 BEGIN {PseudoArt}  
-  WRITELN('Введите слово из набора символов из следующего списка: A, B, C'); 
+  WRITELN('тАЪ┬в┬е┬д┬и├в┬е ├б┬л┬о┬в┬о ┬и┬з ┬н┬а┬б┬о├а┬а ├б┬и┬м┬в┬о┬л┬о┬в ┬и┬з ├б┬л┬е┬д├г├о├й┬е┬г┬о ├б┬п┬и├б┬к┬а: A, B, C'); 
   WHILE NOT EOLN(INPUT)
   DO
     BEGIN                                                        
@@ -67,7 +67,7 @@ BEGIN {PseudoArt}
         ChoosePatternAndWrite(OUTPUT, Ch)
       ELSE
         BEGIN
-          WRITELN('Символ ', Ch, ' не находится в списке обрабатываемых');
+          WRITELN('тАШ┬и┬м┬в┬о┬л ', Ch, ' ┬н┬е ┬н┬а├е┬о┬д┬и├в├б├п ┬в ├б┬п┬и├б┬к┬е ┬о┬б├а┬а┬б┬а├в├л┬в┬а┬е┬м├л├е');
           WRITELN
         END
     END
